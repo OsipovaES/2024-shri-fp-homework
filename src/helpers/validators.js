@@ -61,7 +61,7 @@ const getSquareShape = getShapeProp(SQUARE);
 const getCircleShape = getShapeProp(CIRCLE);
 const getStarShape = getShapeProp(STAR);
 
-// ---Функции для проверки цвета фигуры---
+// --- Функции для проверки цвета фигуры ---
 
 // Красный
 const isRedStar = compose(isRed, getStarShape);
@@ -109,7 +109,7 @@ const squareColorEqualsTriangleColor = ({ square, triangle }) =>
   square === triangle;
 const redAmountEqualsBlueAmount = ({ blue, red }) => blue === red;
 
-// ---Валидации---
+// --- Валидации ---
 
 // 1. Красная звезда, зеленый квадрат, все остальные белые.
 export const validateFieldN1 = allPass([
